@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogos - Mi Sitio Web Dinámico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .catalog-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .catalog-item:hover {
+            transform: translateY(-5px);
+        }
+        .catalog-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .catalog-item h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .catalog-item p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Catálogos</h1>
+        <div class="catalog-grid">
+            <div class="catalog-item">
+                <img src="a3.jpg" alt="Catálogo Al Detal">
+                <h3>Catálogo Al Detal</h3>
+                <p>Descubre nuestra colección.</p>
+            </div>
+            <div class="catalog-item">
+                <img src="a2.jpg" alt="Catálogo Al Mayor">
+                <h3>Catálogo Al Mayor</h3>
+                <p>Explora nuestra línea de productos.</p>
+            </div>
+        </div>
+        <a href="contenido.html" class="back-link">Volver al Contenido</a>
+    </div>
+</body>
+</html>
